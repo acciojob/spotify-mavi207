@@ -183,7 +183,7 @@ public class SpotifyRepository {
     }
 
     // Helper methods to find objects by name
-    private User findUserByMobile(String mobile) {
+    public User findUserByMobile(String mobile) {
         for (User user : users) {
             if (user.getMobile().equals(mobile)) {
                 return user;
@@ -236,5 +236,7 @@ public class SpotifyRepository {
         }
         return null;
     }
+
+
 
 }

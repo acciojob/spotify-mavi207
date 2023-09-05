@@ -59,4 +59,10 @@ public class SpotifyService {
         String mostPopularSong = spotifyRepository.mostPopularSong();
         return mostPopularSong;
     }
+
+    public User findUserByMobile(String mobile) {
+        User user = spotifyRepository.findUserByMobile(mobile);
+        return user;
+    }
+
 }
