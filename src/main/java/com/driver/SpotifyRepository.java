@@ -79,7 +79,7 @@ public class SpotifyRepository {
     public Playlist createPlaylistOnLength(String mobile, String title, int length) throws Exception {
         User user = findUserByMobile(mobile);
         if (user == null) {
-            throw new Exception("User does not exist");
+            throw new Exception("User does not exist");f
         }
         Playlist playlist = new Playlist(title);
         playlists.add(playlist);
