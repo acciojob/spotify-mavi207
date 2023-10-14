@@ -159,7 +159,7 @@ public class SpotifyRepository {
 
     public String mostPopularArtist() {
         Artist mostPopularArtist = null;
-        int maxLikes = -1;
+        int maxLikes = Integer.MAX_VALUE;
         for (Artist artist : artists) {
             if (artist.getLikes() > maxLikes) {
                 maxLikes = artist.getLikes();
